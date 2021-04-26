@@ -1,7 +1,6 @@
 name: Compile-Linux
 
 on:
-  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
@@ -17,4 +16,4 @@ jobs:
     - name: get_avr-gcc
       run: sudo apt-get install gcc-avr binutils-avr avr-libc
     - name: Compile
-      run: make -C implementation/Activity1
+      run: make
