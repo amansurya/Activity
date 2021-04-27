@@ -2,7 +2,7 @@
 
 |ON|OFF|
 |:--:|:--:|
-|\image html ON.png||
+|https://github.com/Saisanathpotnuru/Activity/blob/master/simulation/ON.png||
 
 ## Code 
 ```
