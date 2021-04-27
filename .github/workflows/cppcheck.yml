@@ -1,6 +1,7 @@
 name: Code Quality - Static Code - Cppcheck
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
