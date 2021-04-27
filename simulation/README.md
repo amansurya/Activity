@@ -2,15 +2,6 @@
 
 |ON|OFF|
 |:--:|:--:|
-|https://github.com/Saisanathpotnuru/Activity/blob/master/simulation/ON.png||
+|https://github.com/Saisanathpotnuru/Activity/blob/master/simulation/ON.png|https://github.com/Saisanathpotnuru/Activity/blob/master/simulation/OFF.png|
 
-## Code 
-```
-	for(;;)
-	{
-        change_led_state(HIGH);
-		delay_ms(LED_ON_TIME);
-        change_led_state(LOW);
-		delay_ms(LED_OFF_TIME);	
-	}
-```
+
