@@ -11,13 +11,13 @@ UCSR0B=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);
 
 char USARTReadChar()
 {
-while(!(UCSR0A&(1<<RXC0))){}
+while(DATA_NOT_RECEIVED){}
 return UDR0;
 }
 
 void USARTWriteChar(int data)
 {
-while(!(UCSR0A&(1<<UDRE0))){}
+while(DATA_NOT_WRITTEN){}
 UDR0=data;
 }
 

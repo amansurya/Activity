@@ -8,14 +8,14 @@ PORTD|=(1<<PD2);
 DDRD&=~(1<<PD3);
 PORTD|=(1<<PD3);
 
-   if(!(PIND&(1<<PD2))&&(!(PIND&(1<<PD3))))//the satisfying condition for the sensor to start working.
+   if(BUTTON_ON&&HEATER_ON)//the satisfying condition for the sensor to start working.
         {
-        PORTB|=(1<<PB0);
+        LED_ON;
         _delay_ms(2);
         return 1;
         }
         else{
-        PORTB&=~(1<<PB0);
+        LED_OFF;
         _delay_ms(20);
 
         }

@@ -14,6 +14,11 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+
+#define DATA_NOT_RECEIVED !(UCSR0A&(1<<RXC0))
+#define DATA_NOT_WRITTEN !(UCSR0A&(1<<UDRE0))
+
+
 /**
  * @brief USART function
  * 

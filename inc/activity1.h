@@ -14,6 +14,11 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+#define BUTTON_ON !(PIND&(1<<PD2))
+#define HEATER_ON !(PIND&(1<<PD3))
+#define LED_ON PORTB|=(1<<PB0)
+#define LED_OFF PORTB&=~(1<<PB0)
+
 /**
  * @brief calling function of activity 1
  * 
