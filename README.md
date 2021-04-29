@@ -4,9 +4,13 @@
 
 ## In Action
 
-|ON|OFF|
-|:--:|:--:|
-|![ON](simulation/ON.png)|![OFF](simulation/OFF.png)|
+ON
+
+![ON](simulation/ON.png)
+
+OFF
+
+![OFF](simulation/OFF.png)
 
 #### CI and Code Quality
 
