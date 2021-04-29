@@ -1,1 +1,1 @@
-@mainpage Activity One by Sai Sanath @subpage main.c @subpage fuse.c
+@mainpage Activity by Sai Sanath @subpage main.c @subpage fuse.c
