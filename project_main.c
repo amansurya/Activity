@@ -5,11 +5,12 @@
 
 int main()
 {
-int a1;
+
 uint16_t t1;
 int t2;
 while(1)
 {
+int a1;
 a1=activity1();
 
 if(a1==1)
