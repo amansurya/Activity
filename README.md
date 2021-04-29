@@ -4,11 +4,11 @@
 
 ## In Action
 
-ON
+### ON
 
 ![ON](simulation/ON.png)
 
-OFF
+### OFF
 
 ![OFF](simulation/OFF.png)
 
