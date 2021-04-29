@@ -1,7 +1,7 @@
 /**
  * @file activity4.h
  * @author Sai Sanath P
- * @brief 
+ * @brief header file for activity 4
  * @version 0.1
  * @date 2021-04-29
  * 
@@ -14,8 +14,16 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-
+/**
+ * @brief macro for data not received
+ * 
+ */
 #define DATA_NOT_RECEIVED !(UCSR0A&(1<<RXC0))
+
+/**
+ * @brief macro for data not written
+ * 
+ */
 #define DATA_NOT_WRITTEN !(UCSR0A&(1<<UDRE0))
 
 

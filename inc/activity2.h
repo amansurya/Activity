@@ -1,7 +1,7 @@
 /**
  * @file activity2.h
  * @author Sai Sanath P
- * @brief 
+ * @brief header file for activity 2
  * @version 0.1
  * @date 2021-04-29
  * 

@@ -14,9 +14,28 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
+/**
+ * @brief macro for button on
+ * 
+ */
 #define BUTTON_ON !(PIND&(1<<PD2))
+
+/**
+ * @brief macro for heater on
+ * 
+ */
 #define HEATER_ON !(PIND&(1<<PD3))
+
+/**
+ * @brief macro for LED on
+ * 
+ */
 #define LED_ON PORTB|=(1<<PB0)
+
+/**
+ * @brief macro for LED off
+ * 
+ */
 #define LED_OFF PORTB&=~(1<<PB0)
 
 /**
