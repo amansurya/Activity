@@ -21,11 +21,13 @@ return(ADC);
 int activity2(void)
 {
 InitADC();
-uint16_t temp;
+
 while(1)
 {
+uint16_t temp;
 temp= ReadADC(0);
-return (temp);
 _delay_ms(2);
+return (temp);
+
 }
 }
