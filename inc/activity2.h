@@ -15,6 +15,24 @@
 #include <util/delay.h>
 
 /**
+ * @brief macro to enable prescale
+ * 
+ */
+#define ADC_ENABLE_PRESCALE ADCSRA=(1<<ADEN)|(7<<ADPS0)
+
+/**
+ * @brief setting reference voltage
+ * 
+ */
+#define REFERENCE_VOLTAGE_SET ADMUX=(1<<REFS0)
+
+/**
+ * @brief setting ADC interrupt flag
+ * 
+ */
+#define SET_ADC_INTRPT_FLAG ADCSRA|=(1<<ADIF)
+
+/**
  * @brief Initializing the ADC to read value
  * 
  */

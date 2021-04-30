@@ -2,8 +2,8 @@
 
 void InitADC()
 {
-ADMUX=(1<<REFS0);
-ADCSRA=(1<<ADEN)|(7<<ADPS0);
+REFERENCE_VOLTAGE_SET;
+ADC_ENABLE_PRESCALE;
 }
 
 uint16_t ReadADC(uint8_t ch)
@@ -15,7 +15,7 @@ ADMUX=ch;
 ADCSRA|=(1<<ADSC);
 
 while(!(ADCSRA&(1<<ADIF)));
-ADCSRA|=(1<<ADIF);
+SET_ADC_INTRPT_FLAG;
 return(ADC);
 }
 int activity2(void)
